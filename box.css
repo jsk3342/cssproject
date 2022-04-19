@@ -1,8 +1,6 @@
 body,
-article,
 h1,
-p,
-img {
+p {
   margin: 0;
   padding: 0;
 }
