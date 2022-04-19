@@ -5,88 +5,78 @@ p {
   padding: 0;
 }
 
-.sky {
+.article {
   width: 100vw;
-  height: 30vh;
-  background-image: url(./images/sky.jpg);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+  text-align: center;
+  padding: 60px;
+}
+
+.article_water.article_left {
+  text-align: left;
+}
+
+.article_sky {
+  min-height: 30vh;
+  background-image: url(./images/sky.jpg);
   color: #f2cbbd;
   text-align: center;
 }
 
-.water {
-  width: 100vw;
-  height: 40vh;
+.article_water {
+  min-height: 40vh;
   background-image: url(./images/water.jpg);
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
   text-align: center;
-
-  text-align: left;
-
   color: lightcyan;
 }
 
-.desert {
-  width: 100vw;
-  height: 30vh;
+.article_desert {
+  min-height: 30vh;
   background-image: url(./images/desert.jpg);
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
 }
 
-[class$="title"] {
+.article-title {
   font-size: 2rem;
-}
-
-.sky .sky-img {
-  width: 400px;
-  height: 330px;
-  margin-top: -100px;
-}
-
-.sky .sky-title {
   padding: 30px;
   display: inline-block;
-  border-bottom: 14px solid #a65b4b;
+  border-bottom: 14px solid;
   line-height: 1rem;
+  margin-bottom: 40px;
 }
 
-.water {
+.article_sky .article-title {
+  border-color: #a65b4b;
 }
 
-.water .water-img {
-  width: 600px;
-  height: 200px;
+.article_water .article-title {
+  border-color: #6393a6;
+}
+.article_desert .article-title {
+  color: #8a5a56;
+  border-color: #8a5a56;
+}
+
+.article_sky .article-cover {
+  height: 330px;
+  object-fit: contain;
+}
+
+.article_water .article-cover {
+  height: 150px;
   display: block;
 }
 
-.water .water-title {
-  display: inline-block;
-  margin-left: 30px;
-  padding-bottom: 8px;
-  border-bottom: 14px solid #6393a6;
+.grid {
+  margin: 40px 0;
 }
 
-.desert {
-  text-align: center;
-}
-
-.desert-img {
+.grid-items {
   width: 150px;
   height: 150px;
   border-radius: 50%;
   border: 10px solid #bf785e;
   outline: 3px solid #f2cbbd;
-  margin: 20px 0 0 -50px;
-}
-
-.desert-title {
-  color: #8a5a56;
-  padding: 20px 0;
-  border-bottom: 5px solid #8a5a56;
+  margin: 0 -25px;
 }
